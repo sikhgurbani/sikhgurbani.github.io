@@ -1,0 +1,225 @@
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #ffffff #000000;
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 3px solid #000000;
+}
+
+body {
+    background: black;
+    color: white;
+    font-size: 20px;
+    margin: 0px;
+}
+
+.box {
+    text-align: center;
+    background: gray;
+    padding: 5px;
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    box-shadow: 1px 1px lightgray;
+}
+
+.box-2 {
+    text-align: center;
+    background: darkcyan;
+    padding: 5px;
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    box-shadow: 1px 1px lightgray;
+}
+
+.box-center {
+    max-width: 80%;
+    margin: auto;
+}
+
+.box-content {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.box-content-2 {
+    background: #353535;
+    padding: 5px;
+    margin: 0px;
+    margin-top: 3px;
+    border-radius: 10px;
+    box-shadow: 1px 1px lightgray;
+}
+
+.note {
+    text-align: right;
+    opacity: 50%;
+    margin: 0px;
+    padding-top: 3px;
+}
+
+.input {
+    font-size: 15px;
+    background: darkgray;
+    color: white;
+    margin: 5px;
+    border: 3px double white;
+    border-radius: 10px;
+    box-shadow: 1px 1px lightgray;
+}
+
+::placeholder {
+  color: lightgray;
+  opacity: 70%;
+}
+
+@media screen and (max-width: 658px) {
+    .input-text {
+        width: 50%;
+    }
+}
+
+.input:focus {
+    outline:none;
+}
+
+.input-label {
+    background: darkgray;
+    border: 1px solid white;
+    padding:3px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+html, body {
+    height: 100%;
+    margin: 0px;
+}
+
+.bar {
+    padding: 10px;
+    text-align: center;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+    overflow: auto;
+}
+
+.footer {
+    background: #00623b;
+}
+
+.header {
+    background: #005362;
+}
+
+.menu {
+    background: #00623b;
+}
+
+.keyboard-container {
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #282828;
+    text-align: center;
+    z-index: 9999;
+}
+
+.keyboard {
+    padding: 5px;
+}
+
+.keyboard-button {
+    background: gray;
+    display: inline-block;
+    padding: 3px;
+    margin: 2px;
+    margin-bottom: 6px;
+    color: white;
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    box-shadow: 1px 1px lightgray;
+}
+
+.keyboard-button-exit {
+    float: right;
+}
+
+.pwaInstallInput {
+    padding:10px;
+    margin: 10px;
+    position: absolute;
+    z-index: 9999999;
+    top:0;
+    right: 0;
+}
+
+.loading {
+    text-align: center;
+}
+
+.pwaInstallInputSafari {
+    padding:15px;
+    margin-bottom: 30px;
+    background: #f2f8ff;
+    border-radius: 20px;
+    color: black;
+    position: absolute;
+    z-index: 9999999;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    box-shadow: 2px 2px gray;
+    width: 70%;
+    opacity: 80%;
+    pointer-events: none;
+    text-align: center;
+}
+
+@media screen and (min-width: 950px) {
+    .pwaInstallInputSafari {
+        width: fit-content;
+    }
+}
+
+.pwaInstallInputSafariArrow {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid #f2f8ff;
+    position: absolute;
+    z-index: 9999999;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.inline-icon {
+    vertical-align: middle;
+    margin: 4px;
+    margin: 4px;
+}
