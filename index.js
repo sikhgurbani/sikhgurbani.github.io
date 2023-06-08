@@ -189,11 +189,11 @@ var info;
         dataSearch: undefined,
         pageSearch: undefined,
 
-        sections: await getFile("data/sections.json"),
+        sections: await getFile("data/sections.json").catch(() => location.reload()),
     };
 
     for (let filename of await getFile("data/full.json")) {
-        info.data = info.data.concat(await getFile("data/" + filename));
+        info.data = info.data.concat(await getFile("data/" + filename).catch(() => location.reload()));
     }
 
     updatePage(info);
